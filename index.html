@@ -12,17 +12,17 @@
         <div id="mid-start"></div>
         <div class="main-container">
             <h1 >Login</h1>
-            <form action="login.json">
+            <form action="index.php" method="post">
                 <div class="inputsdiv">
-                    <input id="user" type="text" placeholder="UserName" >
-                <input id="pass" type="text" placeholder="PassWord">
+                <input id="user" name="user" type="text" placeholder="UserName" >
+                <input id="pass" name="pass" type="password" placeholder="PassWord">
                 </div>
+                <button class="login">Sign in</button>
             </form>
-            <button id="login">Sign in</button>
             <div id="error"></div>
             <div id="linksdiv">
                 <a class="links" href="new.html">New user? Sign up now</a>
-            <a class="links" href="forget.html">Forget password?</a>
+            <a class="links" href="forget.php">Forget password?</a>
             </div>
         </div>
         <div id="mid-end"></div>
@@ -30,5 +30,4 @@
     </div>
 </body>
 
-<script src="login.js"></script>
 </html>
