@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,15 +13,17 @@
         <div id="mid-start"></div>
         <div class="main-container">
             <h1 >Create Account </h1>
-            <form action="login.json">
+            <form action="new.php" method="post">
                 <div class="inputsdiv">
-                    <input id="user" type="text" placeholder="Name" >
-                    <input id="email" type="text" placeholder="Email">
-                    <input type="text" placeholder="Mobile No.">
-                    <input id="PassWord" type="text" placeholder="PassWord">
+                    <input name ="name" type="text" placeholder = "Your Name">
+                    <input type="text" name="mobile" placeholder="Mobile No.">
+                    <input id="email" name="email" type="text" placeholder="Email">
+                    <input id="user" name="user" type="text" placeholder="Set UserName" >
+                    <input id="PassWord" name="pass" type="password" placeholder="PassWord">
+                    
                 </div>
+            <button class="login">Sign Up</button>
             </form>
-            <button id="login">Sign Up</button>
             <div id="error"></div>
         </div>
         <div id="mid-end"></div>
