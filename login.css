@@ -94,9 +94,9 @@ body{
     padding-left: 30px;
     border-radius: 40px;
     border: 10px solid transparent;
-    background-color: rgba(193, 15, 205, 0.937);
+    background-color: rgba(188, 11, 236, 0.667);
     margin: 30% 0 0 0;
-    height: 400px;
+    height: auto;
     width: 400px;
     z-index: 2;
     display: inline-flex;
@@ -121,14 +121,13 @@ input{
     background-color: rgba(255, 182, 193, 0.793);
     color: black;
 }
-#login{
+.login{
     width: 170px;
     height: 90px;
     padding: 15px;
     padding-left:20px;
     border-radius: 40px;
     border: 0;
-    margin-left: 90px ;
     text-align: center;
     background-color: rgba(245, 12, 140, 0.889);
     font-weight: 800;
@@ -136,18 +135,50 @@ input{
     color: aliceblue;
     box-shadow: 10px 7px 5px rgb(58, 28, 89);
 }
-#login:active{
+.login:active{
     box-shadow: 2px 2px 0px rgb(58, 28, 89);
-
 }
-.links{
+.links,#error{
     color: pink;
     padding: 10px;
     text-decoration: none;
+    margin :3px;
+}
+#error{
+    visibility: hidden;
+    padding: 15px;
+    font-size: xx-large;
+    font-weight: 700;
+    animation: disappear 4s linear 1 ;
+}
+@keyframes disappear {
+    0%{color: red; visibility: visible; }
+    100%{color : transparent;}
 }
 
 #linksdiv{
     display: flex;
     flex-direction: column;
-    padding-top:60px ;
+    position: relative;
+    bottom: 25px;
+}
+
+.btns{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#resend{
+    margin: 0;
+    cursor: default;
+}
+.check{
+    visibility: visible;
+    color: rgba(120, 25, 215, 0.801);
+    font-size: 25px;
+    font-weight: 600;
+}
+.verified{
+    visibility: visible;
 }
